@@ -1,9 +1,7 @@
-class FirstComponent extends React.Component {
-  render() {
-    return /*#__PURE__*/React.createElement("h1", null, "My Very First Component");
-  }
-
+const FirstComponent = () => {
+  return <h1>My Very First Component</h1>
 }
 
-ReactDOM.render( /*#__PURE__*/React.createElement(FirstComponent, null), document.getElementById("root"));
-
+const NamedComponent = (props) => {
+  return <p>My name is {props.name}</p>
+}
